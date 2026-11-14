@@ -64,12 +64,14 @@
 .whatsapp-contact:hover{background:#174d2f}
 @media(max-width:600px){.contact-bottom{align-items:flex-start;flex-direction:column}.contact-actions{gap:20px}}
 
-.contact-actions{gap:14px}
-.social-icon{display:inline-flex;width:52px;height:52px;align-items:center;justify-content:center;padding:13px;border:1px solid #19191426;border-radius:50%;background:#fffefa80;color:var(--ink);transition:background .15s,color .15s,transform .15s}
-.social-icon svg{width:24px;height:24px;display:block}
+.contact-actions{gap:20px;flex-direction:row;flex-wrap:nowrap}
+.social-icon{display:inline-flex;width:76px;height:76px;flex:0 0 auto;align-items:center;justify-content:center;padding:20px;border:1px solid #19191426;border-radius:50%;background:#fffefa80;color:var(--ink);transition:background .15s,color .15s,transform .15s}
+.social-icon svg{width:34px;height:34px;display:block}
 .social-icon:hover{transform:translateY(-3px);background:var(--ink);color:white}
 .social-whatsapp:hover{background:#216740;border-color:#216740}
 .social-linkedin:hover{background:#0a66c2;border-color:#0a66c2}
 .social-icon:focus-visible{outline:3px solid #b58439;outline-offset:5px}
 .social-icon:disabled{opacity:.35;cursor:default;transform:none;background:#fffefa80;color:var(--ink);border-color:#19191426}
 @media(prefers-reduced-motion:reduce){.social-icon{transition:none}.social-icon:hover{transform:none}}
+
+@media(max-width:800px){.social-icon{width:60px;height:60px;padding:16px}.social-icon svg{width:28px;height:28px}.contact-actions{gap:14px}}
