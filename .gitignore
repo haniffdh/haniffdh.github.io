@@ -1,0 +1,6 @@
+_site/
+*.zip
+node_modules/
+.env
+.env.*
+assets/hanif-portrait.png
